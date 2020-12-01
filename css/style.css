@@ -1,0 +1,27 @@
+body {
+    width: 960px;
+    margin: auto;
+  }
+  
+  header {
+    color: purple;
+    background-color: blanchedalmond;
+  }
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    background-color: cadetblue;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    border: medium solid black;
+    /* margin: auto; */
+  }
+  
+  #first-paragraph {
+    background-color: rgb(157, 217, 219);
+  }
+  
+  .second-class {
+    background-color: darkgray;
+  }
