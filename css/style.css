@@ -1,27 +1,68 @@
 body {
-    width: 960px;
-    margin: auto;
-  }
+  background-color: cadetblue;
+  color: rgb(37, 8, 37);
+  width: 960px;
+  font-family: Helvetica, sans-serif;
+}
   
-  header {
-    color: purple;
-    background-color: blanchedalmond;
-  }
-  h1 {
-    font-size: 3em;
-    text-align: center;
-    background-color: cadetblue;
-    width: 600px;
-    padding: 20px;
-    margin: 20px;
-    border: medium solid black;
-    /* margin: auto; */
-  }
-  
-  #first-paragraph {
-    background-color: rgb(157, 217, 219);
-  }
-  
-  .second-class {
-    background-color: darkgray;
-  }
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: goldenrod;
+  background-color: rgb(37, 8, 37);
+  text-shadow: rgb(49, 49, 49);
+  width: 750px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  border: medium solid black;
+  border-radius: 20px;
+  border-spacing: 20px;
+}
+
+footer {
+  font-family: serif;
+  color: rgb(32, 31, 31);
+}
+
+#first-paragraph {
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-spacing: 20px 20px 20px 20px;
+}
+
+.subheading {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: goldenrod;
+  background-color: rgb(37, 8, 37);
+  border-radius: 20px;
+  border-spacing: 20px 20px 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.headinginsidelist {
+  font-weight: bold;
+}
+
+.goals {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(37, 8, 37);
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
