@@ -18,7 +18,7 @@ if ((homeTown === 'no') || (homeTown === 'n')) {
   // console.log('Yes, I live in Seattle, ' + userName + ' ' + ' answered: ' + homeTown);
   // console.log(userName + ' is correct - not from Seattle.');
   alert('That\'s Correct, ' + userName + '! I am not from Seattle.');
-} else if ((homeTown === 'yes') || (homeTown === 'y')) {
+} else {
   // console.log(userName + ' is incorrect - not from Seattle.');
   alert('Wrong!');
 }
@@ -28,7 +28,7 @@ var onlyChild = prompt('Question 2: Am I an only child?').toLowerCase();
 if ((onlyChild === 'no') || (onlyChild === 'n')) {
   // console.log(userName + ' is correct. I have siblings');
   alert('That\'s correct, ' + userName + '! I have siblings.');
-} else if ((onlyChild === 'yes') || (onlyChild === 'y')) {
+} else ((onlyChild === 'yes') || (onlyChild === 'y')) {
   // console.log(userName + ' is incorrect. I am not an only onlyChild.');
   alert('Wrong!');
 }
@@ -38,7 +38,7 @@ var manyHats = prompt('Question 3: Have I worn many hats throughout my job exper
 if ((manyHats === 'yes') || (manyHats === 'y')) {
   // console.log(userName + ' is correct. I\'ve worked many jobs');
   alert('You got it, ' + userName + '! I have worked in quite a few industries over the years.');
-} else if ((manyHats === 'no') || (manyHats === 'n')) {
+} else ((manyHats === 'no') || (manyHats === 'n')) {
   // console.log(userName + ' is incorrect. I\'ve worn many hats.');
   alert('Wrong!');
 }
@@ -48,7 +48,7 @@ var plantMom = prompt('Question 4: Do I like to take care of plants?').toLowerCa
 if ((plantMom === 'yes') || (plantMom === 'y')) {
   // console.log(userName + ' is correct. I love plants.');
   alert('Correct, ' + userName + '! I have tons of them!');
-} else if ((plantMom === 'no') || (plantMom === 'n')) {
+} else ((plantMom === 'no') || (plantMom === 'n')) {
   // console.log(userName + ' is incorrect. I love plants.');
   alert('Wrong!');
 }
@@ -58,7 +58,7 @@ var healthCare = prompt('Last question: Am I or have I ever worked in healthcare
 if ((healthCare === 'yes') || (healthCare === 'y')) {
   // console.log(userName + ' is correct. I have been a healthcare worker.');
   alert('That\'s right, ' + userName + '! I have healthcare experience.');
-} else if ((healthCare === 'no') || (healthCare === 'n')) {
+} else ((healthCare === 'no') || (healthCare === 'n')) {
   // console.log(userName + ' is incorrect. I have healthcare experience.');
   alert('Wrong!');
 }
