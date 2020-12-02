@@ -1,5 +1,6 @@
 'use strict';
 
+// Greeting
 var userName = prompt('What is your name?');
 // console.log('The user name is ' + userName + '!');
 alert('Hello, ' + userName + '! Welcome.');
@@ -23,6 +24,7 @@ if ((homeTown === 'no') || (homeTown === 'n')) {
   alert('Wrong!');
 }
 
+// Question Two
 var onlyChild = prompt('Question 2: Am I an only child?').toLowerCase();
 
 if ((onlyChild === 'no') || (onlyChild === 'n')) {
@@ -33,6 +35,7 @@ if ((onlyChild === 'no') || (onlyChild === 'n')) {
   alert('Wrong!');
 }
 
+// Question Three
 var manyHats = prompt('Question 3: Have I worn many hats throughout my job experiences?').toLowerCase();
 
 if ((manyHats === 'yes') || (manyHats === 'y')) {
@@ -43,6 +46,7 @@ if ((manyHats === 'yes') || (manyHats === 'y')) {
   alert('Wrong!');
 }
 
+// Question Four
 var plantMom = prompt('Question 4: Do I like to take care of plants?').toLowerCase();
 
 if ((plantMom === 'yes') || (plantMom === 'y')) {
@@ -53,6 +57,7 @@ if ((plantMom === 'yes') || (plantMom === 'y')) {
   alert('Wrong!');
 }
 
+// Question 5
 var healthCare = prompt('Last question: Am I or have I ever worked in healthcare?').toLowerCase();
 
 if ((healthCare === 'yes') || (healthCare === 'y')) {
