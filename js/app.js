@@ -58,7 +58,7 @@ if ((plantMom === 'yes') || (plantMom === 'y')) {
 }
 
 // Question 5
-var healthCare = prompt('Last question: Am I or have I ever worked in healthcare?').toLowerCase();
+var healthCare = prompt('Question 5: Am I or have I ever worked in healthcare?').toLowerCase();
 
 if ((healthCare === 'yes') || (healthCare === 'y')) {
   // console.log(userName + ' is correct. I have been a healthcare worker.');
@@ -67,5 +67,11 @@ if ((healthCare === 'yes') || (healthCare === 'y')) {
   // console.log(userName + ' is incorrect. I have healthcare experience.');
   alert('Wrong!');
 }
+
+// Question 6
+// Guess my favorite number!
+// user gets four attempts to guess correctly
+// if user guesses incorrectly, alert user of remaining guesses and whether user's answer is too high or too low
+// after all attempts are exhausted, tell the user the correct answer
 
 alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
