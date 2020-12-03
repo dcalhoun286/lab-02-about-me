@@ -83,6 +83,7 @@ while (!youLose) {
 
     break;
   }
+
   // console.log(`${userName} guessed wrong.`);
 
   remainingGuesses--;
@@ -90,7 +91,7 @@ while (!youLose) {
   // no more guesses remaining!
   if (remainingGuesses === 0) {
     youLose = true;
-    alert(`Wrong! Sorry, ${userName}, you have no more guesses left. You lose. Moving on to the next question ...`);
+    alert(`Wrong! Sorry, ${userName}, you have no more guesses left. The correct answer is ${correctNumber}. Moving on to the next question ...`);
 
     // they still have guesses left!
   } else if (faveNumber < correctNumber) {
@@ -100,11 +101,39 @@ while (!youLose) {
   }
 }
 
+// Question 7
+// Guess the foods I think are gross!
+
+var foodGuessQuestion = prompt('Question 7: I have a list of some foods that I think are AWFUL. Try to guess one!');
+
+var foodGuessAnswer = foodGuessQuestion.toLowerCase();
+
+// TODO Store foods in an array - anchovies, candy corn, olives, Hawaiian pizza (also correct if they guess pineapple pizza)
+
+var yuckyFoods = ['anchovies', 'candy corn', 'olives', 'hawaiian pizza', 'pineapple pizza'];
+
+remainingGuesses = 6;
+youLose; // this might be unnecessary code as it has already been declared, but I will keep it here for now to better keep track as I try to form my while loop
+var found = false;
+
+for (var i = 0; i < yuckyFoods.length; i++) {
+
+  if (foodGuessAnswer === yuckyFoods[i]) {
+
+    // when they guess a correct answer
+    console.log(`${userName} guessed correctly. ${foodGuessAnswer} is a food I dislike.`);
+    alert(`That's correct, ${userName}! `)
+    break;
+  }
+
+  console.log(`${userName} guessed wrong.`);
+  break;
+}
 
 
-// user gets four attempts to guess correctly
-// if user guesses incorrectly, alert user of remaining guesses and whether user's answer is too high or too low
-// after all attempts are exhausted, tell the user the correct answer
 
+// user gets 6 guesses
 
-alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
+// the guesses end when player runs out of guesses OR if they guess a correct answer
+
+// alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
