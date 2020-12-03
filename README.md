@@ -14,6 +14,7 @@ I built a webpage to help people become more familiar with who I am. As a develo
 * [w3schools](https://www.w3schools.com)
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 * [Stack Overflow](https://stackoverflow.com/questions/34477280/comparing-user-input-to-values-from-an-array)
+* [Repl.it demo](https://repl.it/@rkgallaway/201d70-class-03-arrays-and-loops#index.js)
 
 ### Reflections and Comments
 
