@@ -52,6 +52,7 @@ footer {
 
 .headinginsidelist {
   font-weight: bold;
+  margin-left: 20px;
 }
 
 .goals {
@@ -67,10 +68,13 @@ p {
   margin-right: 20px;
 }
 
-.unordered {
+
+ul {
   list-style-type: square;
+  margin-left: 20px;
 }
 
-.ordered {
+ol {
   list-style-type: decimal;
+  margin-left: 20px;
 }
