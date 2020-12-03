@@ -27,16 +27,19 @@ function questionOne(){
 }
 questionOne();
 
-// // Question Two
-// var onlyChild = prompt('Question 2: Am I an only child?').toLowerCase();
-
-// if ((onlyChild === 'no') || (onlyChild === 'n')) {
-//   // console.log(userName + ' is correct. I have siblings');
-//   alert('That\'s correct, ' + userName + '! I have siblings.');
-// } else {
-//   // console.log(userName + ' is incorrect. I am not an only onlyChild.');
-//   alert('Wrong!');
-// }
+function questionTwo(){
+  // Question Two
+  var onlyChild = prompt('Question 2: Am I an only child?').toLowerCase();
+  
+  if ((onlyChild === 'no') || (onlyChild === 'n')) {
+    // console.log(userName + ' is correct. I have siblings');
+    alert('That\'s correct, ' + userName + '! I have siblings.');
+  } else {
+    // console.log(userName + ' is incorrect. I am not an only onlyChild.');
+    alert('Wrong!');
+  }
+}
+questionTwo();
 
 // // Question Three
 // var manyHats = prompt('Question 3: Have I worn many hats throughout my job experiences?').toLowerCase();
