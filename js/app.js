@@ -69,16 +69,18 @@ function questionFour() {
 }
 questionFour();
 
-// // Question 5
-// var healthCare = prompt('Question 5: Am I or have I ever worked in healthcare?').toLowerCase();
-
-// if ((healthCare === 'yes') || (healthCare === 'y')) {
-//   // console.log(userName + ' is correct. I have been a healthcare worker.');
-//   alert('That\'s right, ' + userName + '! I have healthcare experience.');
-// } else {
-//   // console.log(userName + ' is incorrect. I have healthcare experience.');
-//   alert('Wrong!');
-// }
+function questionFive(){
+  // Question 5
+  var healthCare = prompt('Question 5: Am I or have I ever worked in healthcare?').toLowerCase();
+  if ((healthCare === 'yes') || (healthCare === 'y')) {
+    // console.log(userName + ' is correct. I have been a healthcare worker.');
+    alert('That\'s right, ' + userName + '! I have healthcare experience.');
+  } else {
+    // console.log(userName + ' is incorrect. I have healthcare experience.');
+    alert('Wrong!');
+  }
+}
+questionFive();
 
 // // Question 6
 // // Guess my favorite number!
