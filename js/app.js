@@ -118,63 +118,66 @@ function questionSix() {
 }
 questionSix();
 
-// // Question 7
-// // Guess the foods I think are gross!
+function questionSeven() {
+  // Question 7
+  // Guess the foods I think are gross!
 
-// var foodGuessQuestion = prompt('Question 7: I have a list of some foods that I think are AWFUL. This list is definitely not exhaustive, but try to guess one!');
+  var foodGuessQuestion = prompt('Question 7: I have a list of some foods that I think are AWFUL. This list is definitely not exhaustive, but try to guess one!');
 
-// var foodGuessAnswer = foodGuessQuestion.toLowerCase();
+  var foodGuessAnswer = foodGuessQuestion.toLowerCase();
 
-// // TODO Store foods in an array - anchovies, candy corn, olives, Hawaiian pizza (also correct if they guess pineapple pizza)
+  // TODO Store foods in an array - anchovies, candy corn, olives, Hawaiian pizza (also correct if they guess pineapple pizza)
 
-// var yuckyFoods = ['anchovies', 'candy corn', 'olives', 'hawaiian pizza', 'pineapple pizza'];
+  var yuckyFoods = ['anchovies', 'candy corn', 'olives', 'hawaiian pizza', 'pineapple pizza'];
 
-// remainingGuesses = 6;
+  remainingGuesses = 6;
 
-// var found = false;
+  var found = false;
 
-// for (var i = 0; i <= yuckyFoods.length; i++) {
+  for (var i = 0; i <= yuckyFoods.length; i++) {
 
-//   remainingGuesses--;
+    remainingGuesses--;
 
-//   if (yuckyFoods[i] === foodGuessAnswer) {
+    if (yuckyFoods[i] === foodGuessAnswer) {
 
-//     // when they guess a correct answer
-//     found = true;
+      // when they guess a correct answer
+      found = true;
 
-//     console.log(`${userName} guessed correctly. ${foodGuessAnswer} is a food I dislike.`);
+      console.log(`${userName} guessed correctly. ${foodGuessAnswer} is a food I dislike.`);
 
-//     alert(`That's correct, ${userName}!`);
-//   }
+      alert(`That's correct, ${userName}!`);
+    }
 
-//   if (!found) {
-//     for (var j = 1; j < yuckyFoods.length - 1; j++) {
-//       if (yuckyFoods[j] === foodGuessAnswer) {
-//         found = true;
-//         alert(`That's correct, ${userName}!`);
-//         break;
-//       }
-//     }
-//     // if they guess incorrectly
-//     if (remainingGuesses === 0) {
+    if (!found) {
+      for (var j = 1; j < yuckyFoods.length - 1; j++) {
+        if (yuckyFoods[j] === foodGuessAnswer) {
+          found = true;
+          alert(`That's correct, ${userName}!`);
+          break;
+        }
+      }
+      // if they guess incorrectly
+      if (remainingGuesses === 0) {
 
-//       // user exhausted all of their guesses!
-//       alert(`Sorry, ${userName}, you are out of guesses! Here were the possible answers...`);
-//     } else if (foodGuessAnswer !== yuckyFoods[j]) {
-//       foodGuessQuestion = prompt(`Wrong! ${foodGuessAnswer} is not a correct answer. You have ${remainingGuesses} guess(es) left.`);
-//       foodGuessAnswer = foodGuessQuestion.toLowerCase();
-//     }
-//   }
-// }
+        // user exhausted all of their guesses!
+        alert(`Sorry, ${userName}, you are out of guesses! Here were the possible answers...`);
+      } else if (foodGuessAnswer !== yuckyFoods[j]) {
+        foodGuessQuestion = prompt(`Wrong! ${foodGuessAnswer} is not a correct answer. You have ${remainingGuesses} guess(es) left.`);
+        foodGuessAnswer = foodGuessQuestion.toLowerCase();
+      }
+    }
+  }
 
-// var listYuckyFoods;
-// for (var k = 0; k < yuckyFoods.length; k++) {
-//   if (i < yuckyFoods.length) {
-//     listYuckyFoods += `${yuckyFoods[k]}` + ', ';
-//   } else {
-//     listYuckyFoods += `${yuckyFoods[k]}`;
-//   }
-// }
+  var listYuckyFoods;
+  for (var k = 0; k < yuckyFoods.length; k++) {
+    if (i < yuckyFoods.length) {
+      listYuckyFoods += `${yuckyFoods[k]}` + ', ';
+    } else {
+      listYuckyFoods += `${yuckyFoods[k]}`;
+    }
+  }
+}
+questionSeven();
 
 // alert('All possible correct answers: ' + listYuckyFoods);
 
