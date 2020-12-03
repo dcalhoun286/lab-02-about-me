@@ -69,7 +69,7 @@ function questionFour() {
 }
 questionFour();
 
-function questionFive(){
+function questionFive() {
   // Question 5
   var healthCare = prompt('Question 5: Am I or have I ever worked in healthcare?').toLowerCase();
   if ((healthCare === 'yes') || (healthCare === 'y')) {
@@ -82,38 +82,41 @@ function questionFive(){
 }
 questionFive();
 
-// // Question 6
-// // Guess my favorite number!
-// var faveNumber = parseInt(prompt(`Question 6: Now it\'s time to guess my favorite number, ${userName}! I am giving you 4 attempts to get it right.`));
+function questionSix() {
+  // Question 6
+  // Guess my favorite number!
+  var faveNumber = parseInt(prompt(`Question 6: Now it\'s time to guess my favorite number, ${userName}! I am giving you 4 attempts to get it right.`));
 
-// var youLose = false;
-// var remainingGuesses = 4;
-// var correctNumber = 5;
+  var youLose = false;
+  var remainingGuesses = 4;
+  var correctNumber = 5;
 
-// while (!youLose) {
-//   if (faveNumber === correctNumber) {
-//     // console.log(`${userName} guessed ${correctNumber}! That is right!`)
-//     alert(`That is correct, ${userName}! ${correctNumber} is my favorite number. Moving on to the next question...`);
+  while (!youLose) {
+    if (faveNumber === correctNumber) {
+      // console.log(`${userName} guessed ${correctNumber}! That is right!`)
+      alert(`That is correct, ${userName}! ${correctNumber} is my favorite number. Moving on to the next question...`);
 
-//     break;
-//   }
+      break;
+    }
 
-//   // console.log(`${userName} guessed wrong.`);
+    // console.log(`${userName} guessed wrong.`);
 
-//   remainingGuesses--;
+    remainingGuesses--;
 
-//   // no more guesses remaining!
-//   if (remainingGuesses === 0) {
-//     youLose = true;
-//     alert(`Wrong! Sorry, ${userName}, you have no more guesses left. The correct answer is ${correctNumber}. Moving on to the next question ...`);
+    // no more guesses remaining!
+    if (remainingGuesses === 0) {
+      youLose = true;
+      alert(`Wrong! Sorry, ${userName}, you have no more guesses left. The correct answer is ${correctNumber}. Moving on to the next question ...`);
 
-//     // they still have guesses left!
-//   } else if (faveNumber < correctNumber) {
-//     faveNumber = parseInt(prompt(`Wrong! ${faveNumber} is too low. Guess again! ${remainingGuesses} guess(es) left!`));
-//   } else {
-//     faveNumber = parseInt(prompt(`Wrong! ${faveNumber} is too high. Guess again! ${remainingGuesses} guess(es) left!`));
-//   }
-// }
+      // they still have guesses left!
+    } else if (faveNumber < correctNumber) {
+      faveNumber = parseInt(prompt(`Wrong! ${faveNumber} is too low. Guess again! ${remainingGuesses} guess(es) left!`));
+    } else {
+      faveNumber = parseInt(prompt(`Wrong! ${faveNumber} is too high. Guess again! ${remainingGuesses} guess(es) left!`));
+    }
+  }
+}
+questionSix();
 
 // // Question 7
 // // Guess the foods I think are gross!
