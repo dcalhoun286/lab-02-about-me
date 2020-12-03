@@ -104,7 +104,7 @@ while (!youLose) {
 // Question 7
 // Guess the foods I think are gross!
 
-var foodGuessQuestion = prompt('Question 7: I have a list of some foods that I think are AWFUL. Try to guess one!');
+var foodGuessQuestion = prompt('Question 7: I have a list of some foods that I think are AWFUL. This list is definitely not exhaustive, but try to guess one!');
 
 var foodGuessAnswer = foodGuessQuestion.toLowerCase();
 
@@ -116,18 +116,31 @@ remainingGuesses = 6;
 youLose; // this might be unnecessary code as it has already been declared, but I will keep it here for now to better keep track as I try to form my while loop
 var found = false;
 
-for (var i = 0; i < yuckyFoods.length; i++) {
+for (var i = 0; i <= yuckyFoods.length; i++) {
 
   if (foodGuessAnswer === yuckyFoods[i]) {
 
     // when they guess a correct answer
     console.log(`${userName} guessed correctly. ${foodGuessAnswer} is a food I dislike.`);
-    alert(`That's correct, ${userName}! `)
+    alert(`That's correct, ${userName}! `);
+
     break;
   }
 
   console.log(`${userName} guessed wrong.`);
-  break;
+
+  remainingGuesses--;
+
+  if (remainingGuesses === 0) {
+
+    alert(`Sorry, ${userName}, you are out of guesses! Here were the possible answers...`);
+
+    break;
+
+  } else {
+    foodGuessQuestion = prompt(`Wrong! ${foodGuessAnswer} is not a correct answer. You have ${remainingGuesses} guess(es) left.`);
+    foodGuessAnswer = foodGuessQuestion.toLowerCase();
+  }
 }
 
 
