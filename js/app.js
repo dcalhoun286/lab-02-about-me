@@ -41,16 +41,19 @@ function questionTwo(){
 }
 questionTwo();
 
-// // Question Three
-// var manyHats = prompt('Question 3: Have I worn many hats throughout my job experiences?').toLowerCase();
-
-// if ((manyHats === 'yes') || (manyHats === 'y')) {
-//   // console.log(userName + ' is correct. I\'ve worked many jobs');
-//   alert('You got it, ' + userName + '! I have worked in quite a few industries over the years.');
-// } else {
-//   // console.log(userName + ' is incorrect. I\'ve worn many hats.');
-//   alert('Wrong!');
-// }
+function questionThree(){
+  // Question Three
+  var manyHats = prompt('Question 3: Have I worn many hats throughout my job experiences?').toLowerCase();
+  
+  if ((manyHats === 'yes') || (manyHats === 'y')) {
+    // console.log(userName + ' is correct. I\'ve worked many jobs');
+    alert('You got it, ' + userName + '! I have worked in quite a few industries over the years.');
+  } else {
+    // console.log(userName + ' is incorrect. I\'ve worn many hats.');
+    alert('Wrong!');
+  }
+}
+questionThree();
 
 // // Question Four
 // var plantMom = prompt('Question 4: Do I like to take care of plants?').toLowerCase();
