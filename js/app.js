@@ -179,6 +179,6 @@ function questionSeven() {
 }
 questionSeven();
 
-// alert('All possible correct answers: ' + listYuckyFoods);
+alert('All possible correct answers: ' + listYuckyFoods);
 
-// alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
+alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
