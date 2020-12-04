@@ -16,6 +16,7 @@ I built a webpage to help people become more familiar with who I am. As a develo
 * [Stack Overflow](https://stackoverflow.com/questions/34477280/comparing-user-input-to-values-from-an-array)
 * [Repl.it demo](https://repl.it/@rkgallaway/201d70-class-03-arrays-and-loops#index.js)
 * Ryan Gallaway helped me change my strings into integers using `parseInt();` and helped me clean up some unnecessary code in my JavaScript. [Check him out on GitHub!](https://github.com/rkgallaway)
+* I pair programmed with [Anthony Hayward](https://github.com/behindthecamera89) for part of this project on 03 Dec 2020. I was the Navigator, and Anthony was the Driver.
 
 ### Reflections and Comments
 
