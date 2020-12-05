@@ -6,12 +6,14 @@ var userName = prompt('What is your name?');
 alert('Hello, ' + userName + '! Welcome.');
 
 alert('Let\'s do a fun quiz so you can get to know me better. Ready? Here we go ...');
+var totalCorrectGuesses = 0;
 
 function questionOne() {
   // Question One
   var homeTown = prompt('Question 1: Am I from Seattle?').toLowerCase();
 
   if ((homeTown === 'no') || (homeTown === 'n')) {
+    totalCorrectGuesses++;
     alert('That\'s Correct, ' + userName + '! I am not from Seattle.');
   } else {
     alert('Wrong!');
@@ -24,6 +26,7 @@ function questionTwo() {
   var onlyChild = prompt('Question 2: Am I an only child?').toLowerCase();
 
   if ((onlyChild === 'no') || (onlyChild === 'n')) {
+    totalCorrectGuesses++;
     alert('That\'s correct, ' + userName + '! I have siblings.');
   } else {
     alert('Wrong!');
@@ -36,6 +39,7 @@ function questionThree() {
   var manyHats = prompt('Question 3: Have I worn many hats throughout my job experiences?').toLowerCase();
 
   if ((manyHats === 'yes') || (manyHats === 'y')) {
+    totalCorrectGuesses++;
     alert('You got it, ' + userName + '! I have worked in quite a few industries over the years.');
   } else {
     alert('Wrong!');
@@ -48,6 +52,7 @@ function questionFour() {
   var plantMom = prompt('Question 4: Do I like to take care of plants?').toLowerCase();
 
   if ((plantMom === 'yes') || (plantMom === 'y')) {
+    totalCorrectGuesses++;
     alert('Correct, ' + userName + '! I have tons of them!');
   } else {
     alert('Wrong!');
@@ -59,6 +64,7 @@ function questionFive() {
   // Question 5
   var healthCare = prompt('Question 5: Am I or have I ever worked in healthcare?').toLowerCase();
   if ((healthCare === 'yes') || (healthCare === 'y')) {
+    totalCorrectGuesses++;
     alert('That\'s right, ' + userName + '! I have healthcare experience.');
   } else {
     alert('Wrong!');
@@ -78,13 +84,12 @@ function questionSix() {
   var correctNumber = 5;
 
   while (!youLose) {
+    remainingGuesses--;
     if (faveNumber === correctNumber) {
       alert(`That is correct, ${userName}! ${correctNumber} is my favorite number. Moving on to the next question...`);
-
+      totalCorrectGuesses++;
       break;
     }
-
-    remainingGuesses--;
 
     // no more guesses remaining!
     if (remainingGuesses === 0) {
@@ -122,9 +127,8 @@ function questionSeven() {
       // when they guess a correct answer
       found = true;
       alert(`That's correct, ${userName}!`);
-    }
-
-    if (!found) {
+      totalCorrectGuesses++;
+    } else if (!found) {
       for (var j = 1; j < yuckyFoods.length - 1; j++) {
         if (yuckyFoods[j] === foodGuessAnswer) {
           found = true;
@@ -157,4 +161,4 @@ function questionSeven() {
 }
 questionSeven();
 
-alert('Thanks for taking my About-Me quiz, ' + userName + '! I hope you enjoy looking at the rest of my web page.');
+alert(`Thanks for taking my About-Me quiz, ${userName}! You had a total of ${totalCorrectGuesses} correct answers. I hope you enjoy looking at the rest of my web page.`);
